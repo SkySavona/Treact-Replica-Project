@@ -1,23 +1,52 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const burgerMenu = document.querySelector('.burger-menu');
-  const mobileMenu = document.querySelector('.mobile-menu');
+document.addEventListener("DOMContentLoaded", function () {
+  // Initialize AOS
+  AOS.init({
+    duration: 800,
+    once: true,
+    offset: 200,
+  });
 
-  burgerMenu.addEventListener('click', function(e) {
+  // Mobile menu toggle
+  const burgerMenu = document.querySelector(".burger-menu");
+  const mobileMenu = document.querySelector(".mobile-menu");
+
+  // Function to close mobile menu
+  function closeMobileMenu() {
+    burgerMenu.classList.remove("open");
+    mobileMenu.classList.remove("open");
+  }
+
+  burgerMenu.addEventListener("click", function (e) {
     e.stopPropagation();
-    this.classList.toggle('open');
-    mobileMenu.classList.toggle('open');
+    this.classList.toggle("open");
+    mobileMenu.classList.toggle("open");
   });
 
   // Close menu when clicking outside
-  document.addEventListener('click', function(e) {
+  document.addEventListener("click", function (e) {
     if (!mobileMenu.contains(e.target) && !burgerMenu.contains(e.target)) {
-      burgerMenu.classList.remove('open');
-      mobileMenu.classList.remove('open');
+      closeMobileMenu();
     }
   });
-});
 
-document.addEventListener("DOMContentLoaded", function () {
+  // Handle window resize
+  window.addEventListener("resize", function() {
+    if (window.innerWidth >= 1024) {
+      closeMobileMenu();
+    }
+  });
+
+  // Smooth scroll for navigation links
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
+
   // Testimonial Carousel
   const carousel = document.querySelector(".testimonial__cards");
   const testimonials = carousel.querySelectorAll(".testimonial__card");
@@ -69,4 +98,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
