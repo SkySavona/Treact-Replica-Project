@@ -1877,10 +1877,6 @@ li {
     margin-bottom: 10px;
   }
 
-  .decoration__blob--four {
-    translate: -80px 50px;
-  }
-
   .values__description.column__left {
     padding: 0;
     text-align: center;
@@ -1906,10 +1902,21 @@ li {
   .values__principle p {
     font-size: 14px;
   }
-  
+
   .values__subtitle {
     padding-top: 40px;
     padding-bottom: 0px;
+  }
+
+  .values__img {
+    scale: 1.5;
+    padding-bottom: 50px;
+  }
+
+  .values__description.column__left {
+    padding: 0 40px !important;
+    max-width: 50vh;
+    padding: 0;
   }
 
   .testimonials__image-wrapper {
@@ -2090,11 +2097,6 @@ li {
     font-size: 30px;
   }
 
-  .decoration__blob--five {
-    transform: scale(1.2);
-    translate: -10px 140px;
-  }
-
   .features__title {
     font-size: 36px;
   }
@@ -2188,6 +2190,10 @@ li {
     flex: 0;
   }
 
+  .steps__img {
+    padding-bottom: 20px;
+  }
+
   .row {
     padding: 0;
   }
@@ -2208,6 +2214,7 @@ li {
   }
   .quality__container {
     padding: 50px 0;
+    padding-bottom: 100px;
   }
   .quality__img {
     width: 100%;
@@ -2235,7 +2242,10 @@ li {
     margin-bottom: 0;
     justify-content: center;
     padding-top: 60px;
-    height: 1000px;
+    height: 1100px;
+  }
+  .steps__list {
+    padding-bottom: 100px;
   }
 
   h1 {
@@ -2263,7 +2273,6 @@ li {
 
   .values__container {
     padding: 48px 0;
-    padding-top: 100px;
   }
 
   .pricing__container {
@@ -2320,11 +2329,6 @@ li {
     padding-top: 20px;
   }
 
-  .values__description.column__left {
-    max-width: 300px;
-    padding: 0;
-  }
-
   p {
     font-size: 14px;
   }
@@ -2334,6 +2338,10 @@ li {
   }
   .values__container {
     padding-bottom: 60px;
+  }
+
+  .values__img {
+    padding-bottom: 30px;
   }
 }
 
