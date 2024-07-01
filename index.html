@@ -16,12 +16,13 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="app.js">defer</script>
+    <script src="app.js">
+      defer
+    </script>
   </head>
 
   <body>
     <header>
-      
       <section id="landing">
         <nav class="nav__container">
           <a href="#home" class="logo__container">
@@ -61,38 +62,38 @@
           </ul>
         </div>
         <div class="row" data-aos="fade-right">
-            <div class="header__container">
-              <div class="header__description column__left">
-                <h1>
-                  Beautiful React Templates<span class="purple"> for you.</span>
-                </h1>
-                <p class="header__para">
-                  Our templates are easy to setup, understand and customize. Fully
-                  modular components with a variety of pages and components.
-                </p>
-                <div class="btn">
-                  <input type="text" placeholder="Your E-mail Address" />
-                  <button>Get Started</button>
-                </div>
-                <div class="header__input--container">
-                  <input class="header__input" placeholder="E-mail" />
-                  <div class="header__button"><button>Get Started</button></div>
-                </div>
-                <div class="customers__container">
-                  <p class="trusted__customers">OUR TRUSTED CUSTOMERS</p>
-                  <img
-                    src="./assets/customers-logo-strip.png"
-                    class="img__logo--strip"
-                    alt="customers logo strip"
-                  />
-                </div>
+          <div class="header__container">
+            <div class="header__description column__left">
+              <h1>
+                Beautiful React Templates<span class="purple"> for you.</span>
+              </h1>
+              <p class="header__para">
+                Our templates are easy to setup, understand and customize. Fully
+                modular components with a variety of pages and components.
+              </p>
+              <div class="btn">
+                <input type="text" placeholder="Your E-mail Address" />
+                <button>Get Started</button>
               </div>
-              <div class="column__right">
+              <div class="header__input--container">
+                <input class="header__input" placeholder="E-mail" />
+                <div class="header__button"><button>Get Started</button></div>
+              </div>
+              <div class="customers__container">
+                <p class="trusted__customers">OUR TRUSTED CUSTOMERS</p>
                 <img
-                  src="./assets/design-illustration-homepage-1.svg"
-                  class="header__img"
-                  alt="design illustration"
+                  src="./assets/customers-logo-strip.png"
+                  class="img__logo--strip"
+                  alt="customers logo strip"
                 />
+              </div>
+            </div>
+            <div class="column__right">
+              <img
+                src="./assets/design-illustration-homepage-1.svg"
+                class="header__img"
+                alt="design illustration"
+              />
             </div>
           </div>
         </div>
@@ -112,13 +113,13 @@
             <p
               class="features__description--para"
               data-aos="fade-up"
-              data-aos-delay="200"
+              data-aos-delay="100"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <div class="features__grid">
-              <div class="feature" data-aos="fade-up" data-aos-delay="300">
+              <div class="feature" data-aos="fade-up" data-aos-delay="100">
                 <div class="feature__icon">
                   <img src="./assets/shield-icon.svg" alt="Secure" />
                 </div>
@@ -130,7 +131,7 @@
                   </p>
                 </div>
               </div>
-              <div class="feature" data-aos="fade-up" data-aos-delay="400">
+              <div class="feature" data-aos="fade-up" data-aos-delay="100">
                 <div class="feature__icon">
                   <img src="./assets/support-ico.svg" alt="24/7 Support" />
                 </div>
@@ -142,7 +143,7 @@
                   </p>
                 </div>
               </div>
-              <div class="feature" data-aos="fade-up" data-aos-delay="500">
+              <div class="feature" data-aos="fade-up" data-aos-delay="100">
                 <div class="feature__icon">
                   <img src="./assets/customize-icon.svg" alt="Customizable" />
                 </div>
@@ -154,7 +155,7 @@
                   </p>
                 </div>
               </div>
-              <div class="feature" data-aos="fade-up" data-aos-delay="600">
+              <div class="feature" data-aos="fade-up" data-aos-delay="100">
                 <div class="feature__icon">
                   <img src="./assets/reliable-icon.svg" alt="Reliable" />
                 </div>
@@ -166,7 +167,7 @@
                   </p>
                 </div>
               </div>
-              <div class="feature" data-aos="fade-up" data-aos-delay="700">
+              <div class="feature" data-aos="fade-up" data-aos-delay="100">
                 <div class="feature__icon">
                   <img src="./assets/fast-icon.svg" alt="Fast" />
                 </div>
@@ -178,7 +179,7 @@
                   </p>
                 </div>
               </div>
-              <div class="feature" data-aos="fade-up" data-aos-delay="800">
+              <div class="feature" data-aos="fade-up" data-aos-delay="100">
                 <div class="feature__icon">
                   <img src="./assets/simple-icon.svg" alt="Easy" />
                 </div>
@@ -201,6 +202,7 @@
             <div
               class="quality__description column__left"
               data-aos="fade-right"
+              data-aos-delay="100"
             >
               <h5 class="quality__subtitle">
                 <span class="purple">QUALITY WORK</span>
@@ -219,7 +221,11 @@
                 ><button class="learn-more__button">Learn More</button></a
               >
             </div>
-            <div class="quality__img--container" data-aos="fade-left">
+            <div
+              class="quality__img--container"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
               <img
                 src="./assets/hero-screenshot-1.png"
                 class="quality__img"
@@ -233,14 +239,22 @@
       <section id="steps">
         <div class="row">
           <div class="steps__container">
-            <div class="steps__img--container" data-aos="fade-right">
+            <div
+              class="steps__img--container"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
               <img
                 src="./assets/hero-screenshot-2.png"
                 class="steps__img"
                 alt="design illustration"
               />
             </div>
-            <div class="steps__description column__right" data-aos="fade-left">
+            <div
+              class="steps__description column__right"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
               <h5 class="steps__subtitle">
                 <span class="purple">STEPS</span>
               </h5>
@@ -583,7 +597,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq__item" data-aos="fade-up" data-aos-delay="200">
+              <div class="faq__item" data-aos="fade-up" data-aos-delay="100">
                 <button class="faq__question">
                   How long do you usually support a standalone template for?
                   <span class="faq__arrow">
@@ -598,7 +612,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq__item" data-aos="fade-up" data-aos-delay="300">
+              <div class="faq__item" data-aos="fade-up" data-aos-delay="100">
                 <button class="faq__question">
                   What kind of payment methods do you accept?
                   <span class="faq__arrow">
@@ -613,7 +627,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq__item" data-aos="fade-up" data-aos-delay="400">
+              <div class="faq__item" data-aos="fade-up" data-aos-delay="100">
                 <button class="faq__question">
                   Is there a subscription service to get the latest templates?
                   <span class="faq__arrow">
@@ -628,7 +642,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq__item" data-aos="fade-up" data-aos-delay="500">
+              <div class="faq__item" data-aos="fade-up" data-aos-delay="100">
                 <button class="faq__question">
                   Are the templates compatible with the React?
                   <span class="faq__arrow">
@@ -643,7 +657,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq__item" data-aos="fade-up" data-aos-delay="600">
+              <div class="faq__item" data-aos="fade-up" data-aos-delay="100">
                 <button class="faq__question">
                   Do you really support Internet Explorer 11?
                   <span class="faq__arrow">
@@ -733,7 +747,7 @@
         </div>
         <div class="footer__divider"></div>
         <div class="footer__bottom">
-          <a href="#top" class="footer__logo">
+          <a href="#landing" class="footer__logo">
             <span class="footer__logo-icon">T</span>
             <span class="footer__logo-text">Treact Inc.</span></a
           >

@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize AOS
   AOS.init({
-    duration: 800,
+    duration: 500,
     once: true,
-    offset: 200,
+    offset: 100,
   });
 
   // Mobile menu toggle
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Handle window resize
-  window.addEventListener("resize", function() {
+  window.addEventListener("resize", function () {
     if (window.innerWidth >= 1024) {
       closeMobileMenu();
     }
