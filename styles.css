@@ -507,23 +507,25 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 32px;
   margin: 0 auto;
 }
 
 .values__description {
   flex: 1;
-  max-width: 50%;
 }
 
 .values__img {
   flex: 1;
   max-width: 50%;
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: auto;
 }
 
 .values__description.column__left {
   text-align: left;
-  padding: 0px 70px 0px 0;
 }
 
 .values__subtitle {
@@ -1909,8 +1911,7 @@ li {
   }
 
   .values__img {
-    scale: 1.5;
-    padding-bottom: 50px;
+    width: 100%;
   }
 
   .values__description.column__left {
