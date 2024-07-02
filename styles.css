@@ -1856,6 +1856,7 @@ li {
 
   .values__description.column__left {
     text-align: center;
+    max-height: 50vh;
   }
 
   .values__container {
@@ -1883,11 +1884,6 @@ li {
   .values__img {
     max-width: 100%;
     max-height: 400px;
-  }
-
-  .values__description.column__left {
-    padding: 0 40px !important;
-    max-height: 50vh;
   }
 
   .testimonials__image-wrapper {
