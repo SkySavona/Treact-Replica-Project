@@ -2039,19 +2039,7 @@ li {
   }
 
   .values__img {
-    padding: 0 80px;
-  }
-  .cta__blob--one {
-    translate: -300px 60px;
-    width: 300px;
-    height: 300px;
-    position: absolute;
-  }
-
-  .cta__blob--two {
-    translate: 300px -60px;
-    width: 300px;
-    height: 300px;
+    padding: 0 40px;
   }
 }
 
@@ -2069,7 +2057,7 @@ li {
 
 @media (max-width: 550px) {
   .values__img {
-    padding: 0 60px;
+    padding: 0 20px;
   }
 
   .values__description.column__left {
@@ -2238,7 +2226,7 @@ li {
   .steps__container {
     margin: 0;
     justify-content: center;
-    padding: 60px 0;
+    padding-top: 60px;
   }
 
   h1 {
@@ -2266,7 +2254,7 @@ li {
   }
 
   .values__container {
-    padding: 100px 0;
+    padding: 160px 0 100px 0;
     display: flex;
     flex-direction: column-reverse;
   }
@@ -2277,7 +2265,7 @@ li {
   }
 
   .values__description.column__left {
-    padding: 20px 15px !important;
+    /* padding: 20px 15px !important; */
     width: 100%;
   }
 
@@ -2296,6 +2284,10 @@ li {
   .values__principle--container {
     justify-content: center;
     text-align: center;
+  }
+
+  .pricing__row.row {
+    padding-top: 0;
   }
 
   .values__principle h3,
@@ -2369,18 +2361,6 @@ li {
     padding-bottom: 20px;
   }
 
-  .cta__blob--one {
-    translate: -240px 60px;
-    width: 300px;
-    height: 300px;
-    position: absolute;
-  }
-
-  .cta__blob--two {
-    translate: 240px -60px;
-    width: 300px;
-    height: 300px;
-  }
 }
 
 @media (max-width: 380px) {
@@ -2399,15 +2379,46 @@ li {
   }
 }
 
+@media (max-width: 400px) {
+.values__container {
+  height: 92vh;
+  justify-content: start;
+  padding-bottom: 0px;
+  padding-top: 140px;
+}
+
+.values__img {
+  max-height: 260px;
+  padding: 0;
+}
+.values__description.column__left {
+  padding: 0 auto;
+}
+}
+
 @media (max-width: 360px) {
-  .pricing__row.row {
-    padding-top: 80px;
+  .values__container {
+   height: 96vh;
+   justify-content: start;
+   padding-bottom: 0;
+   padding: auto 10px 0 10px;
+  }
+  .values__img {
+    max-height: 240px;
+    padding: 0;
   }
 }
 
-@media (max-width: 334px) {
+/* @media (max-width: 334px) {
   .values__container {
     padding-bottom: 120px;
+  }
+} */
+
+@media (max-width: 320px) {
+  .values__img {
+    max-height: 220px;
+    padding: 0;
   }
 }
 
