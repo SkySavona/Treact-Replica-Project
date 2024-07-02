@@ -21,6 +21,7 @@ body {
   z-index: 0;
 }
 
+
 .purple {
   color: #6415ff;
 }
@@ -505,7 +506,7 @@ li {
 
 .values__container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   gap: 32px;
   margin: 0 auto;
@@ -761,6 +762,10 @@ li {
   font-weight: 700;
   color: #1a202c;
   margin-top: 20px;
+}
+
+.main {
+  height: 100vh;
 }
 
 .pricing__plan--action {
@@ -1798,9 +1803,6 @@ li {
     margin-top: -50px;
   }
 
-  .steps__container {
-    margin-bottom: -96px;
-  }
   .price {
     font-size: 36px;
   }
@@ -1817,8 +1819,8 @@ li {
 
   .quality__subtitle {
     text-align: center;
-    margin: 20px auto;
-    margin-top: 40px;
+    margin: 10px auto;
+    margin-top: 20px;
   }
 
   .quality__para {
@@ -1838,10 +1840,13 @@ li {
     display: flex;
     max-width: 1280px;
     flex-direction: column;
+    /* padding-bottom: 76px; */
   }
 
   .steps__description.column__right {
     padding: 0;
+    margin-bottom: 0;
+    margin-top: -20px;
     text-align: center;
     max-width: 100%;
   }
@@ -1857,7 +1862,7 @@ li {
 
   .steps__title {
     text-align: center;
-    margin: 10px auto;
+    margin: 0 auto;
   }
 
   .steps__subtitle {
@@ -1880,21 +1885,22 @@ li {
   }
 
   .values__description.column__left {
-    padding: 0;
+    /* padding: 0; */
     text-align: center;
   }
 
   .values__container {
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     display: flex;
     flex-direction: column-reverse;
+    /* height: 100vh; */
   }
 
   .values__principle--container {
     justify-content: center;
     text-align: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
 
   .values__para {
@@ -1906,18 +1912,26 @@ li {
   }
 
   .values__subtitle {
-    padding-top: 40px;
+    /* padding-top: 40px; */
     padding-bottom: 0px;
   }
 
   .values__img {
-    width: 100%;
+    max-width: 100%;
+    /* padding: 0 80px; */
+    max-height: 400px;
+    /* margin: 0 100px; */
+    /* justify-content: flex-end; */
+    /* max-width: ; */
+    /* margin-bottom: -100px; */
+
   }
 
   .values__description.column__left {
     padding: 0 40px !important;
-    max-width: 50vh;
-    padding: 0;
+    max-height: 50vh;
+    /* max-width: 50vh; */
+    /* padding: 0; */
   }
 
   .testimonials__image-wrapper {
@@ -1981,6 +1995,10 @@ li {
     text-align: center;
   }
 
+  .pricing__container {
+    padding: 0 10px;
+  }
+
   .pricing__plans--container {
     flex-direction: column;
     align-items: center;
@@ -2018,7 +2036,8 @@ li {
 
 @media (max-width: 680px) {
   .features__grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+
   }
 
   .features__title,
@@ -2044,7 +2063,7 @@ li {
   .feature {
     display: flex;
     align-items: center;
-    width: 50%;
+    /* width: 50%; */
     text-align: center;
     justify-content: center;
     flex-direction: column;
@@ -2053,8 +2072,9 @@ li {
   }
 
   .features__container {
-    padding-top: 96px;
-    margin-top: 0;
+    /* padding-top: 96px; */
+    padding: 96px 10px;
+    margin: 0;
   }
   .feature p {
     text-align: center;
@@ -2065,12 +2085,13 @@ li {
     margin: 0 0 20px 0;
   }
 
-  .decoration__blob--three {
-    translate: -80px -230px;
-  }
 
   .pricing__title {
     font-size: 48px;
+  }
+
+  .values__img {
+    padding: 0 80px;
   }
 }
 
@@ -2080,9 +2101,19 @@ li {
   .features__title {
     font-size: 36px;
   }
+
+  .features__grid {
+    grid-template-columns: repeat(1, 1fr);
+    /* scale: 0.9; */
+  }
 }
 
 @media (max-width: 550px) {
+
+  .values__img {
+    padding: 0 60px;
+  }
+
   .values__description.column__left {
     padding-bottom: 20px;
     scale: 1.04;
@@ -2192,7 +2223,7 @@ li {
   }
 
   .steps__img {
-    padding-bottom: 20px;
+    padding-bottom: 0px;
   }
 
   .row {
@@ -2215,10 +2246,11 @@ li {
   }
   .quality__container {
     padding: 50px 0;
-    padding-bottom: 100px;
+    padding-bottom: 170px;
   }
   .quality__img {
     width: 100%;
+    scale: 1.1;
   }
   .quality__title {
     font-size: 30px;
@@ -2231,22 +2263,24 @@ li {
 
   .steps__subtitle {
     margin: 0 auto;
+    padding-bottom: 10PX;
   }
 
   .values__subtitle,
   .faq__subtitle,
   .testimonials__subtitle {
     margin-bottom: 10px;
+
   }
 
   .steps__container {
-    margin-bottom: 0;
+    margin: 0;
     justify-content: center;
     padding-top: 60px;
-    height: 1100px;
+    /* height: 1100px; */
   }
   .steps__list {
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
   }
 
   h1 {
@@ -2263,6 +2297,7 @@ li {
 
   .steps__description.column__right {
     margin: 0;
+    padding-top: 40px;
   }
 
   .steps__img--container {
@@ -2284,6 +2319,7 @@ li {
   .pricing__row.row {
     margin: 0;
     padding: 0;
+    padding-top: 50px;
   }
 
   .cta__container {
@@ -2338,11 +2374,25 @@ li {
     padding-bottom: 60px;
   }
   .values__container {
-    padding-bottom: 60px;
+    padding: 30px 15px;
+    /* height: auto; */
+    /* min-height: 110vh; */
+    /* height: 100vh */
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 1100px;
+  }
+  .values__img {
+    padding: 0 20px;
+    /* width: 200px; */
+    /* height: 100px; */
+    margin-bottom: -100px;
   }
 
-  .values__img {
-    padding-bottom: 30px;
+  .values__description.column__left {
+    padding: 20px 15px !important;
+    scale: 1;
   }
 }
 
@@ -2368,10 +2418,49 @@ li {
   .steps__subtitle {
     padding-top: 40px;
   }
-  .steps__container {
-    height: 100vh;
+
+  .quality__container {
+    padding-bottom: 60px;
   }
+  .steps__container {
+    /* height: 100vh; */
+    /* height: 100%; */
+    padding: 0;
+    
+  }
+  .steps__img {
+    padding: 0;
+  }
+
+  .steps__img--container {
+    padding: 0;
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 96px;
+  }
+  .steps__subtitle {
+    padding: 10px 0;
+    /* padding- 20px; */
+  }
+
+  .values__img {
+    padding: 0px;
+  }
+
+  .values__container {
+    /* max-height: 200vh; */
+    /* padding-top: 50px; */
+    /* margin-top: 100px; */
+    height: 1200px;
+    margin-top: -50px;
+  }
+
+.faq__container {
+  padding-top: 30px;
 }
+}
+
+
 
 /* AOS animations */
 
