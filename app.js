@@ -1,16 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Initialize AOS
   AOS.init({
     duration: 500,
     once: true,
     offset: 100,
   });
 
-  // Mobile menu toggle
   const burgerMenu = document.querySelector(".burger-menu");
   const mobileMenu = document.querySelector(".mobile-menu");
 
-  // Function to close mobile menu
   function closeMobileMenu() {
     burgerMenu.classList.remove("open");
     mobileMenu.classList.remove("open");
@@ -22,21 +19,18 @@ document.addEventListener("DOMContentLoaded", function () {
     mobileMenu.classList.toggle("open");
   });
 
-  // Close menu when clicking outside
   document.addEventListener("click", function (e) {
     if (!mobileMenu.contains(e.target) && !burgerMenu.contains(e.target)) {
       closeMobileMenu();
     }
   });
 
-  // Handle window resize
   window.addEventListener("resize", function () {
     if (window.innerWidth >= 1024) {
       closeMobileMenu();
     }
   });
 
-  // Smooth scroll for navigation links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
@@ -47,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Testimonial Carousel
   const carousel = document.querySelector(".testimonial__cards");
   const testimonials = carousel.querySelectorAll(".testimonial__card");
   const prevButton = document.querySelector(".testimonials__nav-button--prev");
@@ -74,7 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
   prevButton.addEventListener("click", prevTestimonial);
   updateCarousel();
 
-  // FAQ Functionality
   const faqItems = document.querySelectorAll(".faq__item");
 
   faqItems.forEach((item) => {
@@ -84,13 +76,11 @@ document.addEventListener("DOMContentLoaded", function () {
     question.addEventListener("click", () => {
       const isOpen = item.classList.contains("active");
 
-      // Close all answers
       faqItems.forEach((i) => {
         i.classList.remove("active");
         i.querySelector(".faq__answer").style.maxHeight = null;
       });
 
-      // Toggle current answer
       if (!isOpen) {
         item.classList.add("active");
         answer.style.maxHeight = answer.scrollHeight + "px";
